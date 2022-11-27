@@ -6,6 +6,7 @@
 }
 
 body {
+  min-height: 100vh;
   background: linear-gradient(
       180deg,
       rgba(227, 255, 248, 0) 82.08%,
