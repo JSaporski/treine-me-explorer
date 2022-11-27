@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      180deg,
+      rgba(227, 255, 248, 0) 82.08%,
+      rgba(227, 255, 248, 0.38) 100%
+    )
+    no-repeat;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Header */
+#page {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 65px 0 58px 0;
+}
+
+#header .header-nav {
+  display: flex;
+  gap: 48px;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+}
+
+#header .header-nav a {
+  opacity: 50%;
+  color: #1f1534;
+}
+
+#header .header-nav a:hover {
+  opacity: 100%;
+  font-weight: 700;
+}
+
+/* Main Content */
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 102px;
+  margin-bottom: 82px;
+}
+
+#main .main-info-content h1 {
+  margin-bottom: 40px;
+  font-family: 'Mulish', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: 400;
+}
+
+#main .main-info-content h1 strong {
+  color: #89c5cc;
+}
+
+#main .main-info-content p {
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+#main .main-info-content a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 16px 32px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #f9f9f9;
+  background-color: #69b99d;
+  border-radius: 4px;
+}
+
+#main .main-info-image img {
+  margin-left: auto;
+}
+
+#main .main-info-image,
+#main .main-info-content {
+  flex: 1 1 260px;
+}
+
+/* Footer */
+#footer {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer p a {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Balls Pattern */
+.balls-decoration {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Reponsive */
+@media only screen and (max-width: 678px) {
+  #header {
+    margin-bottom: 120px;
+    gap: 30px;
+  }
+
+  #header .header-nav {
+    gap: 24px;
+    font-size: 14px;
+  }
+
+  #main {
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+
+  #main .main-info-image img,
+  #main .main-info-content a {
+    margin-inline: auto;
+  }
+}
