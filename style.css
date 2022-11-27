@@ -82,6 +82,7 @@ a {
 }
 
 #main .main-info-content p {
+  max-width: 48ch;
   margin-bottom: 40px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -100,6 +101,10 @@ a {
   color: #f9f9f9;
   background-color: #69b99d;
   border-radius: 4px;
+}
+
+#main .main-info-content a:hover {
+  background-color: #319270;
 }
 
 #main .main-info-image img {
@@ -156,6 +161,10 @@ a {
 
   #main .main-info-image img,
   #main .main-info-content a {
+    margin-inline: auto;
+  }
+
+  #main .main-info-content p {
     margin-inline: auto;
   }
 }
